@@ -1,12 +1,14 @@
-package com.example.examenfinalmiope;
+package com.example.examenfinalmiope.Adapter;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.examenfinalmiope.Entity.Holiday;
+import com.example.examenfinalmiope.R;
 
 import java.util.List;
 

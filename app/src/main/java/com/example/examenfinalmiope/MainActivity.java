@@ -1,7 +1,6 @@
 package com.example.examenfinalmiope;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,6 +12,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.examenfinalmiope.Adapter.HolidayAdapter;
+import com.example.examenfinalmiope.DataBaseHelper.DataBaseHelper;
+import com.example.examenfinalmiope.Entity.Country;
+import com.example.examenfinalmiope.Entity.Holiday;
+import com.example.examenfinalmiope.Entity.ResponseDB;
+import com.example.examenfinalmiope.Manager.ApiManager;
+import com.example.examenfinalmiope.Service.HolidayService;
 
 import java.util.ArrayList;
 import java.util.List;

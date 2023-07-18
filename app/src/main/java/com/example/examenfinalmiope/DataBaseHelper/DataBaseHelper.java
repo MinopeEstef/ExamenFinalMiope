@@ -1,15 +1,16 @@
-package com.example.examenfinalmiope;
+package com.example.examenfinalmiope.DataBaseHelper;
 
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+
+import com.example.examenfinalmiope.Entity.Holiday;
+import com.example.examenfinalmiope.Entity.ResponseDB;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,7 +72,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery(selectQuery, null);
         return cursor.getCount() > 0;
     }
-    public ResponseDB postHoliday( Holiday holiday) {
+    public ResponseDB postHoliday(Holiday holiday) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("date", holiday.getDate());

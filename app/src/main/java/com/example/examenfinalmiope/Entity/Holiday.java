@@ -1,4 +1,4 @@
-package com.example.examenfinalmiope;
+package com.example.examenfinalmiope.Entity;
 
 public class Holiday {
     private int idHoliday;

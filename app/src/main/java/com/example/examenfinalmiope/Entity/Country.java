@@ -1,4 +1,4 @@
-package com.example.examenfinalmiope;
+package com.example.examenfinalmiope.Entity;
 
 public class Country {
     private String name;
